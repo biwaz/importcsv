@@ -1,6 +1,5 @@
 <job id="test">
 <comment>importcsv verification program</comment>
-<object id="objFileSys" progid="Scripting.FileSystemObject" />
 <script language="VBScript" src="./importcsv.vbs"/>
 <script language="VBScript">
 if 0 < wscript.arguments.count then

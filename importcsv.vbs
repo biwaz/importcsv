@@ -1,5 +1,8 @@
 option explicit
 
+dim objFileSys
+set objFileSys = createobject("Scripting.FileSystemObject")
+
 class importcsv
 	public objFile, delimiter, objHeader, items(), count, max
 
@@ -46,7 +49,7 @@ class importcsv
 		close
 
 		if vartype(file) = 8 then
-			set objFile = createobject("Scripting.FileSystemObject").opentextfile(file, 1)
+			set objFile = objFileSys.opentextfile(file, 1)
 			if err.number <> 0 then
 				open = false
 				exit function
