@@ -1,4 +1,4 @@
-<job id="test">
+<job id="importcsv">
 <comment>importcsv verification program</comment>
 <script language="VBScript" src="./importcsv.vbs"/>
 <script language="VBScript">
@@ -31,8 +31,8 @@ if 0 < wscript.arguments.count then
 	objCsv.close
 	set objCsv = nothing
 else
-	wscript.echo "cscript importcsv.vbs [input_file_path]"
-	wscript.echo "ex) cscript importcsv.vbs input.csv"
+	wscript.echo "cscript importcsv.wsf [input_file_path]"
+	wscript.echo "ex) cscript importcsv.wsf input.csv"
 end if
 </script>
 </job>
